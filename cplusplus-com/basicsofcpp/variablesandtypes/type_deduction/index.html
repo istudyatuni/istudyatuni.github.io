@@ -1,4 +1,9 @@
-
+<style type="text/css">
+    a {
+        font-size: 1.2em;
+        color: blue;
+    }
+</style>
 <h3>Type deduction: auto and decltype</h3>
 When a new variable is initialized, the compiler can figure out what the type of the variable is automatically by the initializer. For this, it suffices to use <code>auto</code> as the type specifier for the variable:<br>
 <br>
@@ -19,3 +24,9 @@ Variables that are not initialized can also make use of type deduction with the 
 Here, <code>bar</code> is declared as having the same type as <code>foo</code>.<br>
 <br>
 <code>auto</code> and <code>decltype</code> are powerful features recently added to the language. But the type deduction features they introduce are meant to be used either when the type cannot be obtained by other means or when using it improves code readability. The two examples above were likely neither of these use cases. In fact they probably decreased readability, since, when reading the code, one has to search for the type of <code>foo</code> to actually know the type of <code>bar</code>.<br>
+
+<h4>Sources used</h4>
+<ul>
+    <li><a href="source1.cpp">source1.cpp</a></li>
+    <li><a href="source2.cpp">source2.cpp</a></li>
+</ul>
