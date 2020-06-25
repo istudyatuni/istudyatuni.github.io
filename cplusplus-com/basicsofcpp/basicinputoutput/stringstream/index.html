@@ -1,4 +1,9 @@
-
+<style type="text/css">
+    a {
+        font-size: 1.2em;
+        color: blue;
+    }
+</style>
 <h3>stringstream</h3>
 The standard header <code><a href="/&lt;sstream&gt;">&lt;sstream&gt;</a></code> defines a type called <code><a href="/stringstream">stringstream</a></code> that allows a string to be treated as a stream, and thus allowing extraction or insertion operations from/to strings in the same way as they are performed on <code>cin</code> and <code>cout</code>. This feature is most useful to convert strings to numerical values and vice versa. For example, in order to extract an integer from a string we can write:<br>
 <br>
@@ -40,3 +45,9 @@ Total price: 155.75</samp></pre></td></tr></table></div>
 In this example, we acquire numeric values from the <i>standard input</i> indirectly: Instead of extracting numeric values directly from <code>cin</code>, we get lines from it into a string object (<code>mystr</code>), and then we extract the values from this string into the variables <code>price</code> and <code>quantity</code>. Once these are numerical values, arithmetic operations can be performed on them, such as multiplying them to obtain a total price.<br>
 <br>
 With this approach of getting entire lines and extracting their contents, we separate the process of getting user input from its interpretation as data, allowing the input process to be what the user expects, and at the same time gaining more control over the transformation of its content into useful data by the program.<br>
+
+<h4>Sources used</h4>
+<ul>
+  <li><a href="source1.cpp">source1.cpp</a></li>
+  <li><a href="source2.cpp">source2.cpp</a></li>
+</ul>

@@ -1,4 +1,9 @@
-
+<style type="text/css">
+    a {
+        font-size: 1.2em;
+        color: blue;
+    }
+</style>
 <h3>Standard output (cout)</h3>
 On most program environments, the standard output by default is the screen, and the C++ stream object defined to access it is <code>cout</code>.<br>
 <br>
@@ -71,3 +76,13 @@ Second sentence.<br>
 </code>
 <br>
 The <code>endl</code> manipulator produces a newline character, exactly as the insertion of <code>'\n'</code> does; but it also has an additional behavior: the stream's buffer (if any) is flushed, which means that the output is requested to be physically written to the device, if it wasn't already. This affects mainly <i>fully buffered</i> streams, and <code>cout</code> is (generally) not a <i>fully buffered</i> stream. Still, it is generally a good idea to use <code>endl</code> only when flushing the stream would be a feature and <code>'\n'</code> when it would not. Bear in mind that a flushing operation incurs a certain overhead, and on some devices it may produce a delay.<br>
+
+<h4>Sources used</h4>
+<ul>
+    <li><a href="source1.cpp">source1.cpp</a></li>
+    <li><a href="source2.cpp">source2.cpp</a></li>
+    <li><a href="source3.cpp">source3.cpp</a></li>
+    <li><a href="source4.cpp">source4.cpp</a></li>
+    <li><a href="source5.cpp">source5.cpp</a></li>
+    <li><a href="source6.cpp">source6.cpp</a></li>
+</ul>
