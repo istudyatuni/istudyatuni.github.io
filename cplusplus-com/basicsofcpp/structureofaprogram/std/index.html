@@ -1,4 +1,9 @@
-
+<style type="text/css">
+    a {
+        font-size: 1.2em;
+        color: blue;
+    }
+</style>
 <h3>Using namespace std</h3>
 If you have seen C++ code before, you may have seen <code>cout</code> being used instead of <code>std::cout</code>. Both name the same object: the first one uses its <i>unqualified name</i> (<code>cout</code>), while the second qualifies it directly within the <i>namespace</i> <code>std</code> (as <code>std::cout</code>).<br>
 <br>
@@ -29,3 +34,9 @@ With this in mind, the last example can be rewritten to make unqualified uses of
 Both ways of accessing the elements of the <code>std</code> namespace (explicit qualification and <i>using</i> declarations) are valid in C++ and produce the exact same behavior. For simplicity, and to improve readability, the examples in these tutorials will more often use this latter approach with <i>using</i> declarations, although note that <i>explicit qualification</i> is the only way to guarantee that name collisions never happen.<br>
 <br>
 Namespaces are explained in more detail in a later chapter.<br>
+
+<h4>Sources used</h4>
+<ul>
+    <li><a href="source1.cpp">source1.cpp</a></li>
+    <li><a href="source2.cpp">source2.cpp</a></li>
+</ul>
