@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background:#191919;
+}
+h1.title {
+    text-align: center;
+}
+a {
+    font-size: 1.3em;
+    color: #3ea6ff;
+}
+p {
+    font-size: 1.2em;
+}
+.content {
+    background-color: #282828;
+    color: #aaa;
+    /*box-shadow: 0 0 10px 10px #ddd;*/
+    border-radius: 10px;
+    width: 55%;
+    margin: auto;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    padding-left: 5em;
+}
