@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+}
+h1.title {
+    text-align: center;
+}
+a {
+    font-size: 1.3em;
+}
+p {
+    font-size: 1.2em;
+}
+.content {
+    font-size: 1.2em;
+    border-radius: 10px;
+    width: 55%;
+    margin: auto;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    padding-left: 5em;
+}
