@@ -4,6 +4,9 @@ body {
 a {
     color: blue;
 }
+a:visited {
+    /*color: #8A59F4;*/
+}
 .content {
     background-color: #fff;
     box-shadow: 0 0 10px 10px #ddd;

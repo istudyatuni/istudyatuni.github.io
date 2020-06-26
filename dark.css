@@ -4,7 +4,16 @@ body {
 a {
     color: #3ea6ff;
 }
+a:visited {
+    /*color: #7B3EF4;*/
+}
 .content {
     background-color: #282828;
     color: #aaa;
+}
+#switch {
+    background-color: #4a4a4a;
+    color: #aaa;
+    border-radius: 2px;
+    border: 1px solid #888;
 }

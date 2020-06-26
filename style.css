@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: sans-serif;
 }
 h1.title {
     text-align: center;
@@ -18,4 +19,20 @@ p {
     margin-bottom: 0.5em;
     padding: 1em;
     padding-left: 5em;
+}
+li {
+    margin-bottom: 0.5em;
+    letter-spacing: 0.03em;
+}
+li > a {
+    text-decoration: none;
+}
+.switch-box {
+    display: flex;
+}
+#switch {
+    margin: 2em 6em 1em auto;
+    padding: 0.35em 1em;
+    font-size: 1.1em;
+    user-select: none;
 }

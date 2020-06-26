@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
-    <title>Content</title>
+    <title>C++ tutorial</title>
 </head>
 <body>
   <div class="content">
     <h1 class="title">C++ Tutorial</h1>
     <h1>Table of contents</h1>
     <h2>1. Introduction</h2>
-    <ul>
+    <ol>
         <li><a href="cplusplus-com/introduction/compilers/requirements/index.html">Requirements</a></li>
         <li><a href="cplusplus-com/introduction/compilers/console/index.html">Console programs</a></li>
         <li><a href="cplusplus-com/introduction/compilers/compiler/index.html">Compiler</a></li>
-    </ul>
+    </ol>
     <h2>2. Basics of C++</h2>
     <h3>Basic input ouput</h3>
     <ol>
@@ -76,17 +76,38 @@
         <li><a href="cplusplus-com/programstructure/functions/constref/index.html">Const references</a></li>
         <li><a href="cplusplus-com/programstructure/functions/declarations/index.html">Declaring functions</a></li>
         <li><a href="cplusplus-com/programstructure/functions/defaultvalues/index.html">Default values in parameters</a></li>
+        <li><a href="cplusplus-com/programstructure/functions/void/index.html">Functions with no type</a></li>
         <li><a href="cplusplus-com/programstructure/functions/inline/index.html">Inline functions</a></li>
         <li><a href="cplusplus-com/programstructure/functions/mainreturns/index.html">The return value of main</a></li>
         <li><a href="cplusplus-com/programstructure/functions/recursivity/index.html">Recursivity</a></li>
         <li><a href="cplusplus-com/programstructure/functions/reference/index.html">Arguments passed by value and by reference</a></li>
-        <li><a href="cplusplus-com/programstructure/functions/void/index.html">Functions with no type</a></li>
     </ol>
     <h3>Statements and flow control</h3>
-    <h3>Overload and temlates</h3>
+    <ol>
+        <li><a href="cplusplus-com/programstructure/statementsandflowcontrol/statement/index.html">Statement</a></li>
+        <li><a href="cplusplus-com/programstructure/statementsandflowcontrol/ifelse/index.html">Selection statements: if and else</a></li>
+        <li><a href="cplusplus-com/programstructure/statementsandflowcontrol/switch/index.html">Another selection statement: switch</a></li>
+        <li><a href="cplusplus-com/programstructure/statementsandflowcontrol/loops/index.html">Iteration statements (loops)</a></li>
+        <li><a href="cplusplus-com/programstructure/statementsandflowcontrol/jumps/index.html">Jump statements</a></li>
+    </ol>
+    <h3>Overloads and templates</h3>
+    <ol>
+        <li><a href="cplusplus-com/programstructure/overloadsandtemplates/overload/index.html">Overloaded functions</a></li>
+        <li><a href="cplusplus-com/programstructure/overloadsandtemplates/templates/index.html">Function templates</a></li>
+        <li><a href="cplusplus-com/programstructure/overloadsandtemplates/nontype/index.html">Non-type template arguments</a></li>
+    </ol>
     <h3>Name visibility</h3>
-    <button id="switch">Switch theme</button>
+    <div class="switch-box">
+        <button id="switch">Switch theme</button>
+    </div>
   </div>
 </body>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    document.getElementById('theme').href = theme + ".css";
+</script>
 <script src="script.js"></script>
 </html>
