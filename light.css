@@ -7,6 +7,9 @@ a {
 a:visited {
     /*color: #8A59F4;*/
 }
+.navigation {
+    background-color: #eee;
+}
 .content {
     background-color: #fff;
     box-shadow: 0 0 10px 10px #ddd;

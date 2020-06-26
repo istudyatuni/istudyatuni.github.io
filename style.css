@@ -11,6 +11,14 @@ a {
 p {
     font-size: 1.2em;
 }
+.navigation {
+    padding: 2em;
+    margin: 1em 0 1em -2em;
+    border-radius: 10px;
+}
+ul {
+    list-style-type: disc;
+}
 .content {
     font-size: 1.2em;
     border-radius: 0 0 10px 10px;
@@ -26,12 +34,11 @@ li {
 li > a {
     text-decoration: none;
 }
-.switch-box {
-    display: flex;
-}
 #switch {
-    margin: 2em 6em 0 auto;
     padding: 0.35em 1em;
     font-size: 1.1em;
     user-select: none;
+    position: fixed;
+    bottom: 1em;
+    right: 3em;
 }

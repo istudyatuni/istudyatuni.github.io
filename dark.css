@@ -7,14 +7,17 @@ a {
 a:visited {
     /*color: #7B3EF4;*/
 }
+.navigation {
+    background-color: #333;
+}
 .content {
     background-color: #282828;
     color: #aaa;
     box-shadow: 0 0 10px 10px #111;
 }
 #switch {
-    background-color: #4a4a4a;
+    background-color: #282828;
     color: #bbb;
     border-radius: 2px;
-    border: 1px solid #888;
+    border: 1px solid #4a4a4a;
 }

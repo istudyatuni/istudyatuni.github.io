@@ -9,15 +9,33 @@
 <body>
   <div class="content">
     <h1 class="title">C++ Tutorial</h1>
+    <div class="navigation">
+        <h3 style="margin-left: 1.7em">Navigation</h3>
+        <ol>
+            <li><a href="#p1">Introduction</a></li>
+            <li><a href="#p2">Basics of C++</a></li>
+            <ul>
+                <li><a href="#p21">Basic input ouput</a></li>
+                <li><a href="#p22">Structure of a program</a></li>
+                <li><a href="#p23">Variables and types</a></li>
+                <li><a href="#p24">Constants</a></li>
+                <li><a href="#p25">Operators</a></li>
+            </ul>
+            <li><a href="#p3">Program structure</a></li>
+            <li><a href="#p4">Compound data types</a></li>
+            <li><a href="#p5"></a></li>
+            <li><a href="#p6"></a></li>
+        </ol>
+    </div>
     <h1>Table of contents</h1>
-    <h2>1. Introduction</h2>
+    <h2 id="p1">1. Introduction</h2>
     <ol>
         <li><a href="cplusplus-com/introduction/compilers/requirements/index.html">Requirements</a></li>
         <li><a href="cplusplus-com/introduction/compilers/console/index.html">Console programs</a></li>
         <li><a href="cplusplus-com/introduction/compilers/compiler/index.html">Compiler</a></li>
     </ol>
-    <h2>2. Basics of C++</h2>
-    <h3>Basic input ouput</h3>
+    <h2 id="p2">2. Basics of C++</h2>
+    <h3 id="p21">Basic input ouput</h3>
     <ol>
         <li><a href="cplusplus-com/basicsofcpp/basicinputoutput/intro/index.html">Introduction</a></li>
         <li><a href="cplusplus-com/basicsofcpp/basicinputoutput/cin/index.html">Cin</a></li>
@@ -25,13 +43,13 @@
         <li><a href="cplusplus-com/basicsofcpp/basicinputoutput/cin_and_strings/index.html">Cin and strings</a></li>
         <li><a href="cplusplus-com/basicsofcpp/basicinputoutput/stringstream/index.html">Stringstream</a></li>
     </ol>
-    <h3>Structure of a program</h3>
+    <h3 id="p22">Structure of a program</h3>
     <ol>
         <li><a href="cplusplus-com/basicsofcpp/structureofaprogram/program_structure/index.html">Program structure</a></li>
         <li><a href="cplusplus-com/basicsofcpp/structureofaprogram/comments/index.html">Comments</a></li>
         <li><a href="cplusplus-com/basicsofcpp/structureofaprogram/std/index.html">Using namespace std</a></li>
     </ol>
-    <h3>Variables and types</h3>
+    <h3 id="p23">Variables and types</h3>
     <ol>
         <li><a href="cplusplus-com/basicsofcpp/variablesandtypes/fundamental/index.html">Fundamental</a></li>
         <li><a href="cplusplus-com/basicsofcpp/variablesandtypes/declarations/index.html">Declarations</a></li>
@@ -41,7 +59,7 @@
         <li><a href="cplusplus-com/basicsofcpp/variablesandtypes/strings/index.html">Strings</a></li>
         <li><a href="cplusplus-com/basicsofcpp/variablesandtypes/variables/index.html">Variables</a></li>
     </ol>
-    <h3>Constants</h3>
+    <h3 id="p24">Constants</h3>
     <ol>
         <li><a href="cplusplus-com/basicsofcpp/constants/literals/index.html">Literals</a></li>
         <li><a href="cplusplus-com/basicsofcpp/constants/const/index.html">Const</a></li>
@@ -51,7 +69,7 @@
         <li><a href="cplusplus-com/basicsofcpp/constants/define/index.html">Define</a></li>
         <li><a href="cplusplus-com/basicsofcpp/constants/other/index.html">Other</a></li>
     </ol>
-    <h3>Operators</h3>
+    <h3 id="p25">Operators</h3>
     <p>
         Once introduced to variables and constants, we can begin to operate with them by using <i>operators</i>. What follows is a complete list of operators. At this point, it is likely not necessary to know all of them, but they are all listed here to also serve as reference.</p>
     <ol>
@@ -69,7 +87,7 @@
         <li><a href="cplusplus-com/basicsofcpp/operators/typecast/index.html">Explicit type casting operator</a></li>
     </ol>
     <p>Later in these tutorials, we will see a few more operators, like the ones referring to pointers or the specifics for object-oriented programming.</p>
-    <h2>3. Program structure</h2>
+    <h2 id="p3">3. Program structure</h2>
     <h3>Functions</h3>
     <ol>
         <li><a href="cplusplus-com/programstructure/functions/functions/index.html">Functions</a></li>
@@ -105,7 +123,7 @@
         <li><a href="cplusplus-com/programstructure/namevisibility/using/index.html">using</a></li>
         <li><a href="cplusplus-com/programstructure/namevisibility/alias/index.html">Namespace aliasing</a></li>
     </ol>
-    <h2>4. Compound data types</h2>
+    <h2 id="p4">4. Compound data types</h2>
     <h3>Arrays</h3>
     <ol>
         <li><a href="cplusplus-com/compounddatatypes/arrays/arrays/index.html">Arrays</a></li>
@@ -122,6 +140,11 @@
         <li><a href="cplusplus-com/compounddatatypes/charactersequences/converting/index.html">Strings and null-terminated character sequences</a></li>
     </ol>
     <h3>Data structures</h3>
+    <ol>
+        <li><a href="cplusplus-com/compounddatatypes/datastructures/data_structures/index.html">Data structures</a></li>
+        <li><a href="cplusplus-com/compounddatatypes/datastructures/nesting_structures/index.html">Nesting structures</a></li>
+        <li><a href="cplusplus-com/compounddatatypes/datastructures/pointers_to_structures/index.html">Pointers to structures</a></li>
+    </ol>
     <h3>Pointers</h3>
     <h3>Dynamic memory</h3>
     <p>In the programs seen in previous chapters, all memory needs were determined before program execution by defining the variables needed. But there may be cases where the memory needs of a program can only be determined during runtime. For example, when the memory needed depends on user input. On these cases, programs need to dynamically allocate memory, for which the C++ language integrates the operators <code>new</code> and <code>delete</code>.</p>
@@ -134,10 +157,10 @@
 
 
 
-    <div class="switch-box">
-        <button id="switch">Switch theme</button>
-    </div>
   </div>
+<div class="switch-box">
+    <button id="switch">Switch theme</button>
+</div>
 </body>
 <script type="text/javascript">
     let theme = document.cookie
