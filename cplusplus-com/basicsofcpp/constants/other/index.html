@@ -1,13 +1,34 @@
-
-<h4>Other literals</h4>
-Three keyword literals exist in C++: <code>true</code>, <code>false</code> and <code>nullptr</code>:<br>
-<ul>
-<li><code>true</code> and <code>false</code> are the two possible values for variables of type <code>bool</code>.</li>
-<li><code>nullptr</code> is the <i>null pointer</i> value.</li>
-</ul>
-<br>
-<div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>1<br>2<br>3<br></code></pre></td>
-<td class="source"><pre><code><var>bool</var> foo = <var>true</var>;
-<var>bool</var> bar = <var>false</var>;
-<var>int</var>* p = <var>nullptr</var>;</code></pre></td></tr></table></div>
-<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../../style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+</head>
+<body>
+<div class="content">
+    <h4>Other literals</h4>
+    Three keyword literals exist in C++: <code>true</code>, <code>false</code> and <code>nullptr</code>:<br>
+    <ul>
+    <li><code>true</code> and <code>false</code> are the two possible values for variables of type <code>bool</code>.</li>
+    <li><code>nullptr</code> is the <i>null pointer</i> value.</li>
+    </ul>
+    <br>
+    <div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>1<br>2<br>3<br></code></pre></td>
+    <td class="source"><pre><code><var>bool</var> foo = <var>true</var>;
+    <var>bool</var> bar = <var>false</var>;
+    <var>int</var>* p = <var>nullptr</var>;</code></pre></td></tr></table></div>
+    <br>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "../../../../";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>

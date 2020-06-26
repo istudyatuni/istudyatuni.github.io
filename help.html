@@ -1,0 +1,45 @@
+<style type="text/css">
+    a {
+        font-size: 1.2em;
+        color: blue;
+    }
+</style>
+
+<h4>Sources used</h4>
+<ul>
+    <li><a href="source1.cpp">source1.cpp</a></li>
+    <li><a href="source2.cpp">source2.cpp</a></li>
+    <li><a href="source3.cpp">source3.cpp</a></li>
+    <li><a href="source4.cpp">source4.cpp</a></li>
+    <li><a href="source5.cpp">source5.cpp</a></li>
+    <li><a href="source6.cpp">source6.cpp</a></li>
+    <li><a href="source7.cpp">source7.cpp</a></li>
+    <li><a href="source8.cpp">source8.cpp</a></li>
+    <li><a href="source9.cpp">source9.cpp</a></li>
+</ul>
+
+
+<!-- for inner html-s -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../../style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+</head>
+<body>
+<div class="content">
+    <!-- content here -->
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "../../../../";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>

@@ -1,13 +1,34 @@
-
-<h3>Bitwise operators ( &, |, ^, ~, &lt;&lt;, &gt;&gt; )</h3>
-Bitwise operators modify variables considering the bit patterns that represent the values they store.<br>
-<br>
-<table class="boxed">
-<tr><th>operator</th><th>asm equivalent</th><th>description</th></tr>
-<tr><td><code>&</code></td><td><code>AND</code></td><td>Bitwise AND</td></tr>
-<tr><td><code>|</code></td><td><code>OR</code></td><td>Bitwise inclusive OR</td></tr>
-<tr><td><code>^</code></td><td><code>XOR</code></td><td>Bitwise exclusive OR</td></tr>
-<tr><td><code>~</code></td><td><code>NOT</code></td><td>Unary complement (bit inversion)</td></tr>
-<tr><td><code>&lt;&lt;</code></td><td><code>SHL</code></td><td>Shift bits left</td></tr>
-<tr><td><code>&gt;&gt;</code></td><td><code>SHR</code></td><td>Shift bits right</td></tr>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../../style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+</head>
+<body>
+<div class="content">
+    <h3>Bitwise operators ( &, |, ^, ~, &lt;&lt;, &gt;&gt; )</h3>
+    Bitwise operators modify variables considering the bit patterns that represent the values they store.<br>
+    <br>
+    <table class="boxed">
+    <tr><th>operator</th><th>asm equivalent</th><th>description</th></tr>
+    <tr><td><code>&</code></td><td><code>AND</code></td><td>Bitwise AND</td></tr>
+    <tr><td><code>|</code></td><td><code>OR</code></td><td>Bitwise inclusive OR</td></tr>
+    <tr><td><code>^</code></td><td><code>XOR</code></td><td>Bitwise exclusive OR</td></tr>
+    <tr><td><code>~</code></td><td><code>NOT</code></td><td>Unary complement (bit inversion)</td></tr>
+    <tr><td><code>&lt;&lt;</code></td><td><code>SHL</code></td><td>Shift bits left</td></tr>
+    <tr><td><code>&gt;&gt;</code></td><td><code>SHR</code></td><td>Shift bits right</td></tr>
+    </table>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "../../../../";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>

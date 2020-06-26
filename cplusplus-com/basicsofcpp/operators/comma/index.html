@@ -1,10 +1,31 @@
-
-<h3>Comma operator ( , )</h3>
-The comma operator (<code>,</code>) is used to separate two or more expressions that are included where only one expression is expected. When the set of expressions has to be evaluated for a value, only the right-most expression is considered.<br>
-<br>
-For example, the following code:<br>
-<div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>&nbsp;</code></pre></td>
-<td class="source"><pre><code>a = (b=3, b+2);</code></pre></td></tr></table></div>
-<br>
-<br>
-would first assign the value 3 to <code>b</code>, and then assign <code>b+2</code> to variable <code>a</code>. So, at the end, variable <code>a</code> would contain the value 5 while variable <code>b</code> would contain value 3.<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../../style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+</head>
+<body>
+<div class="content">
+    <h3>Comma operator ( , )</h3>
+    The comma operator (<code>,</code>) is used to separate two or more expressions that are included where only one expression is expected. When the set of expressions has to be evaluated for a value, only the right-most expression is considered.<br>
+    <br>
+    For example, the following code:<br>
+    <div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>&nbsp;</code></pre></td>
+    <td class="source"><pre><code>a = (b=3, b+2);</code></pre></td></tr></table></div>
+    <br>
+    <br>
+    would first assign the value 3 to <code>b</code>, and then assign <code>b+2</code> to variable <code>a</code>. So, at the end, variable <code>a</code> would contain the value 5 while variable <code>b</code> would contain value 3.<br>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "../../../../";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>

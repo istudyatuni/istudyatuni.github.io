@@ -1,11 +1,32 @@
-
-<h3>sizeof</h3>
-This operator accepts one parameter, which can be either a type or a variable, and returns the size in bytes of that type or object:<br>
-<br>
-<div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>&nbsp;</code></pre></td>
-<td class="source"><pre><code>x = <var>sizeof</var> (<var>char</var>);</code></pre></td></tr></table></div>
-<br>
-<br>
-Here, <code>x</code> is assigned the value <code>1</code>, because <code>char</code> is a type with a size of one byte.<br>
-<br>
-The value returned by <code>sizeof</code> is a compile-time constant, so it is always determined before program execution.<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../../style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+</head>
+<body>
+<div class="content">
+    <h3>sizeof</h3>
+    This operator accepts one parameter, which can be either a type or a variable, and returns the size in bytes of that type or object:<br>
+    <br>
+    <div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>&nbsp;</code></pre></td>
+    <td class="source"><pre><code>x = <var>sizeof</var> (<var>char</var>);</code></pre></td></tr></table></div>
+    <br>
+    <br>
+    Here, <code>x</code> is assigned the value <code>1</code>, because <code>char</code> is a type with a size of one byte.<br>
+    <br>
+    The value returned by <code>sizeof</code> is a compile-time constant, so it is always determined before program execution.<br>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "../../../../";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>

@@ -1,5 +1,26 @@
-
-<h3>Namespace aliasing</h3>
-Existing namespaces can be aliased with new names, with the following syntax:<br>
-<br>
-<code>namespace new_name = current_name;</code>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../../../../style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+</head>
+<body>
+<div class="content">
+    <h3>Namespace aliasing</h3>
+    Existing namespaces can be aliased with new names, with the following syntax:<br>
+    <br>
+    <code>namespace new_name = current_name;</code>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "../../../../";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>
