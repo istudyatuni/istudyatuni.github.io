@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+    <title>Line control</title>
+</head>
+<body>
+<div class="content">
+    <h3>Line control (#line)</h3>
+    When we compile a program and some error happens during the compiling process, the compiler shows an error message with references to the name of the file where the error happened and a line number, so it is easier to find the code generating the error.<br>
+    <br>
+    The <code>#line</code> directive allows us to control both things, the line numbers within the code files as well as the file name that we want that appears when an error takes place. Its format is: <br>
+    <br>
+    <code>
+    #line number "filename"<br>
+    </code>
+    <br>
+    Where <code>number</code> is the new line number that will be assigned to the next code line. The line numbers of successive lines will be increased one by one from this point on.<br>
+    <br>
+    <code>"filename"</code> is an optional parameter that allows to redefine the file name that will be shown. For example: <br>
+    <br>
+    <div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>1<br>2<br></code></pre></td>
+    <td class="source"><pre><code><dfn>#line 20 "assigning variable"</dfn>
+    <var>int</var> a?;</code></pre></td><td class="C_btnholder"></td></tr></table></div>
+    <br>
+    <br>
+    This code will generate an error that will be shown as error in file <code>"assigning variable"</code>, line 20.<br>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "/";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>
