@@ -1,12 +1,34 @@
-
-<h3>Source file inclusion (#include)</h3>
-This directive has been used assiduously in other sections of this tutorial. When the preprocessor finds an <code>#include</code> directive it replaces it by the entire content of the specified header or file. There are two ways to use <code>#include</code>: <br>
-<br>
-<div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>1<br>2<br></code></pre></td>
-<td class="source"><pre><code><dfn>#include &lt;header&gt;</dfn>
-<dfn>#include "file" </dfn></code></pre></td></tr></table></div>
-<br>
-<br>
-In the first case, a <i>header</i> is specified between angle-brackets <code>&lt;&gt;</code>. This is used to include headers provided by the implementation, such as the headers that compose the standard library (<code>iostream</code>, <code>string</code>,...). Whether the headers are actually files or exist in some other form is <i>implementation-defined</i>, but in any case they shall be properly included with this directive.<br>
-<br>
-The syntax used in the second <code>#include</code> uses quotes, and includes a <i>file</i>. The <i>file</i> is searched for in an <i>implementation-defined</i> manner, which generally includes the current path. In the case that the file is not found, the compiler interprets the directive as a <i>header</i> inclusion, just as if the quotes (<code>""</code>) were replaced by angle-brackets (<code>&lt;&gt;</code>).<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+    <title>Source file inclusion</title>
+</head>
+<body>
+<div class="content">
+    <h3>Source file inclusion (#include)</h3>
+    This directive has been used assiduously in other sections of this tutorial. When the preprocessor finds an <code>#include</code> directive it replaces it by the entire content of the specified header or file. There are two ways to use <code>#include</code>: <br>
+    <br>
+    <div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>1<br>2<br></code></pre></td>
+    <td class="source"><pre><code><dfn>#include &lt;header&gt;</dfn>
+    <dfn>#include "file" </dfn></code></pre></td></tr></table></div>
+    <br>
+    <br>
+    In the first case, a <i>header</i> is specified between angle-brackets <code>&lt;&gt;</code>. This is used to include headers provided by the implementation, such as the headers that compose the standard library (<code>iostream</code>, <code>string</code>,...). Whether the headers are actually files or exist in some other form is <i>implementation-defined</i>, but in any case they shall be properly included with this directive.<br>
+    <br>
+    The syntax used in the second <code>#include</code> uses quotes, and includes a <i>file</i>. The <i>file</i> is searched for in an <i>implementation-defined</i> manner, which generally includes the current path. In the case that the file is not found, the compiler interprets the directive as a <i>header</i> inclusion, just as if the quotes (<code>""</code>) were replaced by angle-brackets (<code>&lt;&gt;</code>).<br>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "/";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>

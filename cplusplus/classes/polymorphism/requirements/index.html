@@ -1,9 +1,31 @@
-
-Before getting any deeper into this chapter, you should have a proper understanding of pointers and class inheritance. If you are not really sure of the meaning of any of the following expressions, you should review the indicated sections:<br>
-<br>
-<table class="boxed">
-<tr><th>Statement:</th><th>Explained in:</th></tr>
-<tr><td><code>int A::b(int c) { }</code></td><td><a href="/doc/tutorial/classes/">Classes</a></td></tr>
-<tr><td><code>a-&gt;b</code></td><td><a href="/doc/tutorial/structures/">Data structures</a></td></tr>
-<tr><td><code>class A: public B {};</code></td><td><a href="/doc/tutorial/inheritance/">Friendship and inheritance</a></td></tr>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+    <title>Requirements</title>
+</head>
+<body>
+<div class="content">
+    Before getting any deeper into this chapter, you should have a proper understanding of pointers and class inheritance. If you are not really sure of the meaning of any of the following expressions, you should review the indicated sections:<br>
+    <br>
+    <table class="boxed">
+    <tr><th>Statement:</th><th>Explained in:</th></tr>
+    <tr><td><code>int A::b(int c) { }</code></td><td><a href="/doc/tutorial/classes/">Classes</a></td></tr>
+    <tr><td><code>a-&gt;b</code></td><td><a href="/doc/tutorial/structures/">Data structures</a></td></tr>
+    <tr><td><code>class A: public B {};</code></td><td><a href="/doc/tutorial/inheritance/">Friendship and inheritance</a></td></tr>
+    </table>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "/";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>
