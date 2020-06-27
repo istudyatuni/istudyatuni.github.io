@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+    <title>Dev-C++</title>
+</head>
+<body>
+<div class="content">
+    <h1>Dev-C++</h1>
+    <div id="download"></div>
+    <dfn>Dev-C++</dfn> is a free IDE for Windows that uses either MinGW or TDM-GCC as underlying compiler.<br>
+    <br>
+    Originally released by <i>Bloodshed Software</i>, but abandoned in 2006, it has recently been forked by Orwell, including a choice of more recent compilers. It can be downloaded from:<br>
+    <br>
+    <code><a href="http://orwelldevcpp.blogspot.com/">http://orwelldevcpp.blogspot.com</a></code> <br>
+    <br>
+    <h3>Installation</h3>
+    Run the downloaded executable file, and follow its instructions. The default options are fine.<br>
+    <br>
+    <div id="cpp11"></div>
+    <h3>Support for C++11</h3>
+    By default, support for the most recent version of C++ is not enabled. It shall be explicitly enabled by going to:<br>
+    <br>
+    <code>Tools -&gt; Compiler Options</code> <br>
+    <img src="devcpp1.png" alt=""> <br>
+    <br>
+    Here, select the "Settings" tab, and within it, the "Code Generation" tab. There, in "Language standard (-std)" select "ISO C++ 11":<br>
+    <img src="devcpp2.png" alt=""> <br>
+    <br>
+    Ok that. You are now ready to compile C++11!<br>
+    <h3>Compiling console applications</h3>
+    To compile and run simple console applications such as those used as examples in these tutorials it is enough with opening the file with Dev-C++ and hit <code>F11</code>.<br>
+    <br>
+    As an example, try:<br>
+    <br>
+    <code>File -&gt; New -&gt; Source File</code> (or <code>Ctrl+N</code>)<br>
+    <br>
+    There, write the following:<br>
+    <div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>1<br>2<br>3<br>4<br>5<br>6<br></code></pre></td>
+    <td class="source"><pre><code><dfn>#include &lt;iostream&gt;</dfn>
+    <var>int</var> main()
+    {
+      <var>auto</var> x = R<kbd>"(Hello world!)"</kbd>;
+      std::cout &lt;&lt; x;
+    }</code></pre></td><td class="C_btnholder"></td></tr></table></div>
+    <br>
+    <br>
+    Then:<br>
+    <br>
+    <code>File -&gt; Save As...</code> (or <code>Ctrl+Alt+S</code>)<br>
+    <br>
+    And save it with some file name with a <code>.cpp</code> extension, such as <code>example.cpp</code>.<br>
+    <br>
+    Now, hitting <code>F11</code> should compile and run the program.<br>
+    <br>
+    If you get an error on the type of <code>x</code>, the compiler does not understand the new meaning given to <code>auto</code> since C++11. Please, make sure you downloaded the latest version as <a href="#download" class="inner-link">linked above</a>, and that you enabled the compiler options to compile C++11 as <a href="#cpp11" class="inner-link">described above</a>.<br>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "/";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+    <title>Code::Blocks</title>
+</head>
+<body>
+<div class="content">
+    <h1>Code::Blocks</h1>
+    <i>Code::Blocks</i> is a cross-platform IDE that supports compiling and running multiple programming languages.<br>
+    <br>
+    It is available for download from:<br>
+    <br>
+    <code><a href="http://www.codeblocks.org/">http://www.codeblocks.org/</a></code> <br>
+    <br>
+    Code::Blocks can work with a variety of compilers.<br>
+    <br>
+    For Windows, it is offered optionally with the MingW compiler. This version that includes MingW is sufficient to follow these tutorials, letting you compile the examples right away. If unsure, download the one named "<code>codeblocks-XX.XX-mingw-setup.exe</code>".<br>
+    <br>
+    For Linux and Mac users, download the version corresponding to your distribution.<br>
+    <h3>Installation</h3>
+    On Windows, run the downloaded executable file, and follow its instructions. The default options are fine.<br>
+    <br>
+    <div id="cpp11"></div>
+    <h3>Support for C++11</h3>
+    If you have a version of GCC as compiler (such as MingW for Windows), chances are it will come with support for the most recent version of C++ disabled by default. This can be explicitly enabled by going to:<br>
+    <br>
+    <code>Settings -&gt; Compiler...</code> <br>
+    <img src="codeblocks1.png" alt=""> <br>
+    <br>
+    And here, within "Global compiler settings", in "Compiler settings" tab, check the box <i>"Have g++ follow the C++11 ISO C++ language standard [-std=c++11]"</i>: <br>
+    <img src="codeblocks2.png" alt="">
+    <br>
+    <h3>Console Application</h3>
+    To compile and run simple console applications such as those used as examples in these tutorials it is enough with opening the file with Code::blocks and hit <code>F9</code>.<br>
+    <br>
+    As an example, try:<br>
+    <br>
+    <code>File -&gt; New -&gt; Empty File</code> <br>
+    <br>
+    There write the following:<br>
+    <div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>1<br>2<br>3<br>4<br>5<br>6<br></code></pre></td>
+    <td class="source"><pre><code><dfn>#include &lt;iostream&gt;</dfn>
+    <var>int</var> main()
+    {
+      <var>auto</var> x = R<kbd>"(Hello world!)"</kbd>;
+      std::cout &lt;&lt; x;
+    }</code></pre></td><td class="C_btnholder"></td></tr></table></div>
+    <br>
+    <br>
+    Then:<br>
+    <br>
+    <code>File -&gt; Save file as...</code> <br>
+    <br>
+    And save it with some file name with a <code>.cpp</code> extension, such as <code>example.cpp</code>.<br>
+    <br>
+    Now, hitting <code>F9</code> should compile and run the program.<br>
+    <br>
+    If you get an error on the type of <code>x</code>, the compiler does not understand the new meaning given to <code>auto</code> since C++11. Please, make sure you have a recent compiler and that you enabled the compiler options to compile C++11 as <a href="#cpp11" class="inner-link">described above</a>.<br>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "/";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>

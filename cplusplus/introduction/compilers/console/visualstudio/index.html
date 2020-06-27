@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+    <title>Visual Studio</title>
+</head>
+<body>
+<div class="content">
+    <h1>Visual Studio Express</h1>
+    <i>Visual Studio Express for Windows Desktop</i> is a tool from Microsoft that integrates a development interface and the toolchains needed to compile a variety of programming languages.<br>
+    <br>
+    It is a reduced version of <i>Visual Studio</i> available as a free program to download from:<br>
+    <br>
+    <code><a href="https://visualstudio.microsoft.com/">https://visualstudio.microsoft.com/</a></code> <br>
+    <br>
+    Note that Express comes in a variety of versions. The one needed to compile console programs is <i><b>Express for Windows Desktop</b></i> (neither <i>Express for Web</i> nor <i>Express for Windows</i> will do).<br>
+    <br>
+    <h3>Installation</h3>
+    Run the executable (if it is an ISO, open the ISO file and run the executable within). Then follow the instructions given by the installer.<br>
+    <br>
+    <h3>Support for C++11</h3>
+    The C++ compiler integrated with <i>Visual Studio Express</i> supports many features introduced by the recent standard, enough to follow the tutorials in this site off the box.<br>
+    <br>
+    <h3>Console Application</h3>
+    Both <i>Visual Studio</i> and its free <i>Express</i> version are designed to build a variety of applications. For the tutorials, we are interested in compiling and running simple console applications.<br>
+    <br>
+    To compile and run a simple console application in <i>Visual Studio Express</i>:<br>
+    <br>
+    <code>File -&gt; New Project...</code> <br>
+    <br>
+    <img src="vse1.png" alt=""> <br>
+    <br>
+    Here, on the left-hand side, select <code>Templates -&gt; Visual C++</code>. Then, on the central part, select <i>Win32 Console Application</i>:<br>
+    <br>
+    <img src="vse2.png" alt=""> <br>
+    <br>
+    On the bottom, you have the option to give a name to the project and select a location where the files will be stored. The default options are fine, but you can also change them to better fit your needs.<br>
+    <br>
+    Now click <code>[OK]</code>
+    <br>
+    This will open the <i>Win32 Application Wizard</i>:<br>
+    <br>
+    <img src="vse3.png" alt=""> <br>
+    <br>
+    Click <code>[Next]</code>.<br>
+    <br>
+    <img src="vse4.png" alt=""> <br>
+    <br>
+    Leave "Console application" selected, and in <i>Additional options</i> select <b><u>E</u>mpty project</b>. Other options are not needed, but won't bother either.<br>
+    <br>
+    Now we have an empty project. We need to add a file to it. For that:<br>
+    <br>
+    On the <i>Solution Explorer</i> at right, look for <i>Source Files</i> under your application. Right-click -&gt; Add -&gt; New Item...<br>
+    <br>
+    <img src="vse5.png" alt=""> <br>
+    <br>
+    Here, add a new C++ file:<br>
+    <br>
+    <img src="vse6.png" alt=""> <br>
+    <br>
+    You can give it any name you want with a <code>.cpp</code> extension, such as <code>example.cpp</code>. After clicking <code>OK</code>, the main window will display en editor to edit this new C++ file. Write the following in it:<br>
+    <br>
+    <div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>1<br>2<br>3<br>4<br>5<br>6<br></code></pre></td>
+    <td class="source"><pre><code><dfn>#include &lt;iostream&gt;</dfn>
+    <var>int</var> main()
+    {
+      <var>auto</var> x = R<kbd>"(Hello world!)"</kbd>;
+      std::cout &lt;&lt; x;
+    }</code></pre></td><td class="C_btnholder"></td></tr></table></div>
+    <br>
+    <br>
+    Then, to compile and run this application simply press <code>Ctrl+F5</code>.<br>
+    <br>
+    You can edit this file as much as needed and trigger a new <i>Compile-and-Run</i> every time when ready.<br>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "/";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>

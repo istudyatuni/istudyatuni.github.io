@@ -11,6 +11,9 @@ h1.title {
 a {
     font-size: 1.3em;
 }
+.inner-link {
+    font-size: inherit;
+}
 p {
     font-size: 1.2em;
 }
