@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+    <title>Keyword explicit</title>
+</head>
+<body>
+<div class="content">
+    <h3>Keyword explicit</h3>
+    On a function call, C++ allows one implicit conversion to happen for each argument. This may be somewhat problematic for classes, because it is not always what is intended. For example, if we add the following function to the last example:<br>
+    <br>
+    <div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>&nbsp;</code></pre></td>
+    <td class="source"><pre><code><var>void</var> fn (B arg) {}</code></pre></td><td class="C_btnholder"></td></tr></table></div>
+    <br>
+    <br>
+    This function takes an argument of type <code>B</code>, but it could as well be called with an object of type <code>A</code> as argument:<br>
+    <br>
+    <div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>&nbsp;</code></pre></td>
+    <td class="source"><pre><code>fn (foo);</code></pre></td><td class="C_btnholder"></td></tr></table></div>
+    <br>
+    <br>
+    This may or may not be what was intended. But, in any case, it can be prevented by marking the affected constructor with the <code>explicit</code> keyword:<br>
+    <br>
+    <div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10<br>11<br>12<br>13<br>14<br>15<br>16<br>17<br>18<br>19<br>20<br>21<br>22<br>23<br>24<br>25<br>26<br>27<br></code></pre></td>
+    <td class="source"><pre><code><cite>// explicit:</cite>
+    <dfn>#include &lt;iostream&gt;</dfn>
+    <var>using</var> <var>namespace</var> std;
+
+    <var>class</var> A {};
+
+    <var>class</var> B {
+    <var>public</var>:
+      <var>explicit</var> B (<var>const</var> A&amp; x) {}
+      B&amp; <var>operator</var>= (<var>const</var> A&amp; x) {<var>return</var> *<var>this</var>;}
+      <var>operator</var> A() {<var>return</var> A();}
+    };
+
+    <var>void</var> fn (B x) {}
+
+    <var>int</var> main ()
+    {
+      A foo;
+      B bar (foo);
+      bar = foo;
+      foo = bar;
+      
+    <cite>//  fn (foo);  // not allowed for explicit ctor.</cite>
+      fn (bar);  
+
+      <var>return</var> 0;
+    }</code></pre></td><td class="C_btnholder"></td></tr></table></div>
+    <br>
+    <br>
+    Additionally, constructors marked with <code>explicit</code> cannot be called with the assignment-like syntax; In the above example, <code>bar</code> could not have been constructed with:<br>
+    <br>
+    <div class="auto"><table class="snippet"><tr><td class="rownum"><pre><code>&nbsp;</code></pre></td>
+    <td class="source"><pre><code>B bar = foo;</code></pre></td><td class="C_btnholder"></td></tr></table></div>
+    <br>
+    <br>
+    Type-cast member functions (those described in the previous section) can also be specified as <code>explicit</code>. This prevents implicit conversions in the same way as <code>explicit</code>-specified constructors do for the destination type.<br>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "/";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>
