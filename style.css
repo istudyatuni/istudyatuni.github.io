@@ -22,7 +22,6 @@ ul {
 .content {
     font-size: 1.2em;
     border-radius: 0 0 10px 10px;
-    width: 55%;
     margin: auto;
     margin-bottom: 2em;
     padding: 1em 3em 3em 5em;
@@ -41,4 +40,14 @@ li > a {
     position: fixed;
     bottom: 1em;
     right: 3em;
+}
+@media screen and (max-width: 1300px) {
+    .content {
+        width: 75%;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .content {
+        width: 55%;
+    }
 }
