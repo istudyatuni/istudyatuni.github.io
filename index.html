@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+    <title>C++ handbook</title>
+</head>
+<body>
+<div class="content">
+    <h1 class="title">C++ handbook</h1>
+    <ol>
+        <li><a href="cplusplus/">cplusplus</a> (<a href="http://www.cplusplus.com/doc/tutorial/">orig</a>)</li>
+        <li><a href="learncpp/">learncpp</a> (<a href="https://www.learncpp.com/">orig</a>)</li>
+        <li><a href="tutorialspoint/">tutorialspoint</a> (<a href="https://www.learncpp.com/">orig</a>)</li>
+    </ol>
+</div>
+<div class="switch-box">
+    <button id="switch">Switch theme</button>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    document.getElementById('theme').href = theme + ".css";
+</script>
+</html>

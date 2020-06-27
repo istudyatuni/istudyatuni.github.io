@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+    <title>Learn C++</title>
+</head>
+<body>
+<div class="content">
+    <p>Content empty</p>
+</div>
+</body>
+<script src="script.js" id="link"></script>
+<script type="text/javascript">
+    let theme = document.cookie
+    .split('; ')
+    .find(row => row.startsWith('theme'))
+    .split('=')[1];
+    let up = "/";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
+</script>
+</html>

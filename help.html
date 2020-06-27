@@ -24,8 +24,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="../../../../style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
+    <title></title>
 </head>
 <body>
 <div class="content">
@@ -38,7 +39,7 @@
     .split('; ')
     .find(row => row.startsWith('theme'))
     .split('=')[1];
-    let up = "../../../../";
+    let up = "/";
     document.getElementById('theme').href = up + theme + ".css";
     document.getElementById('link').src = up + "script.js";
 </script>

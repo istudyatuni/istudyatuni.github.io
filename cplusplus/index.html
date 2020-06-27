@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
     <link rel="stylesheet" type="text/css" href="dark.css" id="theme">
     <title>C++ tutorial</title>
 </head>
@@ -225,16 +225,15 @@
 
 
   </div>
-<div class="switch-box">
-    <button id="switch">Switch theme</button>
-</div>
 </body>
 <script type="text/javascript">
     let theme = document.cookie
     .split('; ')
     .find(row => row.startsWith('theme'))
     .split('=')[1];
-    document.getElementById('theme').href = theme + ".css";
+    let up = "/";
+    document.getElementById('theme').href = up + theme + ".css";
+    document.getElementById('link').src = up + "script.js";
 </script>
 <script src="script.js"></script>
 </html>
